@@ -10,9 +10,9 @@ Biblioteca: gestiona los libros y los usuarios, y maneja las operaciones de pré
 
 ```mermaid
   classDiagram
-    Biblioteca "1" --> "1..*" Libro : contiene
-    Biblioteca "1" --> "1..*" Usuario : registra
-    Usuario "1" --> "0..*" Libro : toma prestado
+    Biblioteca  -->  Libro : contiene
+    Biblioteca  -->  Usuario : registra
+    Usuario  -->  Libro : toma prestado
 
     class Biblioteca {
         - libros: List<Libro>
