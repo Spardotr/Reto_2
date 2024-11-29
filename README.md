@@ -19,5 +19,5 @@
             +devolver_libro(libro, usuario)
             +consultar_estado_libro(libro)
         }
-        Biblioteca "0..*" --> "0..*" Libro : contiene
-        Biblioteca "0..*" --> "0..*" Usuario : tiene
+        Biblioteca "*" --> "" Libro 
+        Biblioteca "" --> "*" Usuario 
