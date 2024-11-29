@@ -1,3 +1,4 @@
+    ```mermaid
     classDiagram
         class Libro {
             +String titulo
